@@ -1,0 +1,82 @@
+.login {
+  width: 100%;
+  height: 100vh; /* full screen */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+}
+
+/* left side */
+.login .leftpanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+.login .leftpanel h1{
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+.login .leftpanel p{
+    font-size: 24px;
+}
+.login .rightpanel p span{
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+/* right side */
+.login .rightpanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* login card */
+.login .rightpanel .card {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* input fields */
+.login .rightpanel .card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* button */
+.login .rightpanel .card button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+}
+
+.login .rightpanel .card button:hover {
+  background: #764ba2;
+}
+
+/* sign up link */
+.login .rightpanel .card a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.login .rightpanel .card a:hover {
+  text-decoration: underline;
+}
