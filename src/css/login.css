@@ -1,82 +1,152 @@
 .login {
-  width: 100%;
-  height: 100vh; /* full screen */
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  display: flex;
+    width: 100%;
+    height: 100vh;
+    /* full screen */
+    background: linear-gradient(135deg, #1f1c2c, #928DAB);
+    display: flex;
 }
 
 /* left side */
 .login .leftpanel {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 20px;
-}
-.login .leftpanel h1{
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-.login .leftpanel p{
-    font-size: 24px;
-}
-.login .rightpanel p span{
-    color: dodgerblue;
-    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
 }
 
 /* right side */
 .login .rightpanel {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* login card */
 .login .rightpanel .card {
-  width: 300px;
-  padding: 20px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* input fields */
 .login .rightpanel .card input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 }
 
 /* button */
 .login .rightpanel .card button {
-  width: 100%;
-  height: 35px;
-  border: none;
-  border-radius: 3px;
-  background: #667eea;
-  color: white;
-  cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .login .rightpanel .card button:hover {
-  background: #764ba2;
+    background: #764ba2;
 }
 
 /* sign up link */
 .login .rightpanel .card a {
-  color: #667eea;
-  text-decoration: none;
+    color: #667eea;
+    text-decoration: none;
 }
 
 .login .rightpanel .card a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+.login .right .card input:focus {
+    border: 1px solid #667eea;
+}
+
+.login .rightpanel .card button:hover {
+    border: 1px solid #3557ef;
+}
+
+.login .leftpanel h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.login .leftpanel p {
+    font-size: 24px;
+}
+
+.login .rightpanel p span {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.login .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .overlay .signup {
+    width: 350px;
+    height: 500px;
+    background: aqua;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login .overlay .signup .close {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.login .overlay .signup label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.login .overlay .signup input {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 10px;
+}
+.login .overlay .signup input:focus {
+  border: 1px solid #667eea;
+}
+.login .overlay .signup .regButton {
+  border: none;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 2px;
+  height: 35px;
+}
+.login .overlay .signup .regButton:hover {
+  background: #3557ef;
 }
