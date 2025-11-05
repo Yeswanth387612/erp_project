@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Dashboard.css';
+import './dashboard.css';
 import { BASEURL, callApi, getSession, setSession } from './lib';
 
 class Dashboard extends Component {
